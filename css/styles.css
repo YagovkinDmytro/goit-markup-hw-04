@@ -79,6 +79,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+
 /* Nav */
 .info-page {
   color: var(--main-cl-link);
@@ -110,6 +111,14 @@ img {
 /* Hero section */
 .hero {
   background-color: var(--navyblue, #2e2f42);
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url("../images/main-page/main-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .hero-text {
   color: var(--white, #fff);
@@ -133,6 +142,7 @@ img {
 .hero-button:focus {
   background-color: #404bbf;
 }
+
 /* Main section 1 */
 .benefits-title-point {
   font-size: 20px;
@@ -152,6 +162,7 @@ img {
   letter-spacing: 0.02em;
   text-transform: capitalize;
 }
+
 /* Main section 3 */
 .team {
   background-color: var(--cloud, #f4f4fd);
@@ -175,6 +186,17 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
 }
+/* Main section 4 */
+.customers-title {
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+
 /* Portfolio page */
 /* Portfolio section */
 .portfolio-title {
@@ -184,6 +206,7 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
 }
+
 /* Filter button */
 .button-filter {
   font-family: var(--main-font);
@@ -205,6 +228,7 @@ img {
   color: var(--white, #fff);
   border: 1px solid transparent;
 }
+
 /* Footer */
 .footer {
   background-color: var(--navyblue, #2e2f42);
@@ -241,6 +265,7 @@ img {
   padding: 0 15px;
   margin: 0 auto;
 }
+
 /* Top section */
 .header {
   border-bottom: 1px solid var(--cornflower, #e7e9fc);
@@ -277,6 +302,7 @@ img {
   align-items: center;
   gap: 40px;
 }
+
 /* Hero section */
 .hero {
   padding: 188px 0;
@@ -295,6 +321,7 @@ img {
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
+
 /* Section 1 structure */
 .benefits {
   padding-top: 120px;
@@ -312,8 +339,8 @@ img {
 .benefits-title-point {
   margin-bottom: 8px;
 }
-/* Section 2 structure */
 
+/* Section 2 structure */
 .product {
   padding-bottom: 120px;
 }
@@ -362,6 +389,13 @@ img {
   text-align: center;
 }
 
+/* Section 4 structure */
+.customers-title {
+  margin-bottom: 72px;
+}
+.customers {
+  padding: 120px 0;
+}
 /* Footer structure */
 .footer {
   padding: 100px 0;
@@ -373,6 +407,7 @@ img {
 .text-footer {
   max-width: 264px;
 }
+
 /* Prtfolio button section  */
 .main-section {
   padding: 96px 0 120px 0;
@@ -389,6 +424,7 @@ img {
   background: var(--cloud, #f4f4fd);
   border: 1px solid var(--cornflower, #e7e9fc);
 }
+
 /* Prtfolio card section  */
 .section-card {
   display: flex;
@@ -405,4 +441,14 @@ img {
 }
 .portfolio-title {
   margin-bottom: 8px;
+}
+
+/* Section icons 2 */
+.benefits-icon {
+}
+
+/* Section icons 3 */
+.team-socials-link {
+}
+.team-socials-icon {
 }
