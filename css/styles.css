@@ -346,6 +346,10 @@ img {
   background: var(--CLOUD, #f4f4fd);
   margin-bottom: 8px;
 }
+.benefits-icon {
+  width: 64px;
+  height: 64px;
+}
 
 .benefits-title-point {
   margin-bottom: 8px;
@@ -402,6 +406,7 @@ img {
 }
 .team-socials {
   display: flex;
+  justify-content: center;
   width: 232px;
   gap: 24px;
   margin: 0 auto;
@@ -409,12 +414,24 @@ img {
 .team-socials-thumb {
   width: 40px;
   height: 40px;
-  flex-shrink: 0;
-  border-radius: 50%;
-  background-color: var(--IRIS, #4d5ae5);
-  padding: 12px;
 }
+.team-socials-link {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: var(--IRIS, #4d5ae5);
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+.team-socials-link:hover,
+.team-socials-link:focus {
+  background-color: #404bbf;
+}
+
 .team-socials-icon {
+  width: 16px;
+  height: 16px;
   fill: #f4f4fd;
 }
 
