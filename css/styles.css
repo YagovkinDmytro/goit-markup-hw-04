@@ -335,6 +335,17 @@ img {
   width: 264px;
   flex-basis: calc((100% - 3 * 24px) / 4);
 }
+.benefits-thumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 264px;
+  height: 112px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  background: var(--CLOUD, #f4f4fd);
+  margin-bottom: 8px;
+}
 
 .benefits-title-point {
   margin-bottom: 8px;
@@ -387,6 +398,24 @@ img {
 }
 .team-text {
   text-align: center;
+  margin-bottom: 8px;
+}
+.team-socials {
+  display: flex;
+  width: 232px;
+  gap: 24px;
+  margin: 0 auto;
+}
+.team-socials-thumb {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background-color: var(--IRIS, #4d5ae5);
+  padding: 12px;
+}
+.team-socials-icon {
+  fill: #f4f4fd;
 }
 
 /* Section 4 structure */
@@ -441,14 +470,4 @@ img {
 }
 .portfolio-title {
   margin-bottom: 8px;
-}
-
-/* Section icons 2 */
-.benefits-icon {
-}
-
-/* Section icons 3 */
-.team-socials-link {
-}
-.team-socials-icon {
 }
