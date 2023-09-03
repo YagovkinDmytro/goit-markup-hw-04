@@ -142,6 +142,16 @@ img {
 .hero-button:focus {
   background-color: #404bbf;
 }
+/* Modal window */
+.backdrop {
+  background: var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.4));
+}
+.modal {
+}
+.modal-btn {
+}
+.modal-btn-icon {
+}
 
 /* Main section 1 */
 .benefits-title-point {
@@ -240,7 +250,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-.footer-socials-title {
+.footer-socials-text {
   color: var(--WHITE, #fff);
   font-size: 16px;
   font-weight: 500;
@@ -298,24 +308,21 @@ img {
   align-items: center;
   gap: 40px;
 }
-.header-item {
+
+.info-page.current {
   position: relative;
+  color: var(--OCEAN, #404bbf);
 }
 .current::after {
   display: block;
   content: "";
-  color: var(--OCEAN, #404bbf);
+  background-color: var(--OCEAN, #404bbf);
   width: 100%;
   height: 4px;
   border-radius: 2px;
   position: absolute;
   left: 0;
   bottom: -1px;
-}
-
-.current:hover,
-.current:focus {
-  color: var(--OCEAN, #404bbf);
 }
 
 .info-page {
@@ -513,7 +520,7 @@ img {
 .text-footer {
   max-width: 264px;
 }
-.footer-socials-title {
+.footer-socials-text {
   margin-bottom: 16px;
 }
 .footer-socials-list {
