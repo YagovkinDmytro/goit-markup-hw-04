@@ -369,6 +369,10 @@ img {
   background: var(--CLOUD, #f4f4fd);
   margin-bottom: 8px;
 }
+.benefits-icon {
+  width: 64px;
+  height: 64px;
+}
 .benefits-title-point {
   margin-bottom: 8px;
 }
