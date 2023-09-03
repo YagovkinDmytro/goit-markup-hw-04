@@ -301,16 +301,23 @@ img {
 .header-item {
   position: relative;
 }
-.header-item::after {
+.current::after {
   display: block;
   content: "";
+  color: var(--OCEAN, #404bbf);
+  width: 100%;
   height: 4px;
   border-radius: 2px;
-  background-color: var(--OCEAN, #404bbf);
   position: absolute;
   left: 0;
   bottom: -1px;
 }
+
+.current:hover,
+.current:focus {
+  color: var(--OCEAN, #404bbf);
+}
+
 .info-page {
   display: block;
   padding: 24px 0;
@@ -368,10 +375,6 @@ img {
   border-radius: 4px;
   background: var(--CLOUD, #f4f4fd);
   margin-bottom: 8px;
-}
-.benefits-icon {
-  width: 64px;
-  height: 64px;
 }
 .benefits-title-point {
   margin-bottom: 8px;
@@ -482,15 +485,11 @@ img {
   border-radius: 4px;
   border: 1px solid var(--LIGHT-SLATE, #8e8f99);
 }
-.customers-icon:hover,
-.customers-icon:focus {
-  border-color: #404bbf;
-  fill: #404bbf;
-}
+
 .customers-link:hover,
 .customers-link:focus {
+  color: #404bbf;
   border-color: #404bbf;
-  fill: #404bbf;
 }
 .customers-icon {
   fill: currentColor;
