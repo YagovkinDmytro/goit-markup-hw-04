@@ -220,15 +220,18 @@ img {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-filter:hover,
 .button-filter:focus {
   background-color: var(--ocean, #404bbf);
   color: var(--white, #fff);
   border: 1px solid transparent;
-  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
-    0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 /* Footer */
@@ -578,8 +581,8 @@ img {
 }
 .section-card-link {
   display: block;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .card-text {
   padding: 32px 16px;
   border: 1px solid var(--cornflower, #e7e9fc);
@@ -587,6 +590,28 @@ img {
 }
 .portfolio-title {
   margin-bottom: 8px;
+}
+.section-card-thumb {
+  position: relative;
+  overflow: hidden;
+}
+.overlay {
+  color: var(--CLOUD, #f4f4fd);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 40px 32px;
+  background: #4d5ae5;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.section-card-link:hover .overlay {
+  transform: translateY(0);
+}
+.section-card-link:focus .overlay {
+  transform: translateY(0);
 }
 
 /* Modal window */
