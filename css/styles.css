@@ -102,6 +102,7 @@ img {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .info-contact:hover,
 .info-contact:focus,
@@ -138,11 +139,13 @@ img {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-button:hover,
 .hero-button:focus {
   background-color: #404bbf;
 }
+
 /* Modal window */
 .backdrop {
   position: fixed;
@@ -151,14 +154,14 @@ img {
   width: 100%;
   height: 100%;
   background: rgba(46, 47, 66, 0.4);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .backdrop.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
 }
-
 .modal {
   position: absolute;
   top: 50%;
@@ -260,6 +263,7 @@ img {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-filter:hover {
   background-color: var(--ocean, #404bbf);
@@ -486,6 +490,7 @@ img {
   border-radius: 50%;
   align-items: center;
   justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-socials-link:hover,
 .team-socials-link:focus {
@@ -522,6 +527,7 @@ img {
   color: #8e8f99;
   border-radius: 4px;
   border: 1px solid var(--LIGHT-SLATE, #8e8f99);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-link:hover,
@@ -571,6 +577,7 @@ img {
   border-radius: 50%;
   align-items: center;
   justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-socials-icon {
   fill: #f4f4fd;
