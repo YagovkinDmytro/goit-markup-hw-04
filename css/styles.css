@@ -166,6 +166,7 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
+  width: 100%;
   transform: translateX(-50%) translateY(-50%);
   width: 408px;
   min-height: 584px;
@@ -199,6 +200,10 @@ img {
 .modal-btn:active {
   background-color: #404bbf;
   fill: #ffffff;
+  border: none;
+}
+.modal-btn-icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Main section 1 */
