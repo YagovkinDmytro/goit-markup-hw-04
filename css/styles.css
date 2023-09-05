@@ -266,12 +266,7 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.body-container {
-  max-width: 1440px;
-  padding-left: 0;
-  padding-right: 0;
-  margin: 0 auto;
-}
+
 .container {
   width: 1158px;
   padding: 0 15px;
@@ -336,6 +331,7 @@ img {
 .hero {
   max-width: 1440px;
   padding: 188px 0;
+  margin: 0 auto;
 }
 .hero-text {
   max-width: 496px;
